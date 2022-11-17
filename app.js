@@ -77,7 +77,6 @@ function render() {
   ctx.canvas.width = window.innerWidth;
   ctx.canvas.height = window.innerHeight;
 
-  if (win) return;
 
   ctx.font = '32px serif';
 
@@ -85,7 +84,8 @@ function render() {
 
   ctx.fillText(`Targets hit: ${numOfHits}`, window.innerWidth - 230, 50);
   ctx.fillText(`# of targets: ${NUM_OF_ENTITIES}`, window.innerWidth - 230, 90);
-
+  
+  if (win) return;
 
   if (numOfHits === NUM_OF_ENTITIES) {
     win = true
