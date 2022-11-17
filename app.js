@@ -4,7 +4,7 @@ const ctx = canvas.getContext("2d");
 const ENTITY_WIDTH = 32;
 const ENTITY_HEIGHT = 32;
 const ENTITY_SPEED = 7;
-const NUM_OF_ENTITIES = 2;
+const NUM_OF_ENTITIES = 10;
 
 function drawRect(x, y, w, h, color) {
   ctx.beginPath();
